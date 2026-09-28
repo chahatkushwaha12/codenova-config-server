@@ -1,0 +1,16 @@
+server:
+  port: 9050
+  servlet.context-path: /account
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:9010/codenova-account-db
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: sk_test_51TUVrJChxCyF4wwAPVe7jUfsnmzdam6k5Zu5wBYsN1AQm6I2BuBNLXg9VjKIWBiZUQ3soeeKjzAmpwDYqRzAtRyv00D8k8PNMa
+  webhook:
+    secret: whsec_39a338da3287a07d09fc2f4f2d5e766e812acad1047a2f0102a6ad64f96dc981
